@@ -9,11 +9,6 @@ The codebase implements, trains, and compares three distinct Sequence-to-Sequenc
 (Seq2Seq) architectures in PyTorch to demonstrate the evolution of sequence 
 modelling techniques and how they handle information bottlenecks.
 
-This evaluation task is a simplified analogue of the full 
-[FASEROH](https://ml4sci.org/assets/faseroh.pdf) problem: rather than translating 
-histogram bin counts into symbolic PDFs, here we translate symbolic functions into 
-their symbolic Taylor expansions. The core seq2seq machinery is identical.
-
 ---
 
 ## Dataset Generation
