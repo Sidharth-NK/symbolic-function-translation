@@ -1,4 +1,3 @@
-# faseroh-gsoc-2026
 # Math to Taylor Series Translation (Seq2Seq)
 
 This project formulates the mathematical operation of calculating Taylor series 
@@ -147,16 +146,17 @@ outputs all six visualizations, and writes `results_summary.json`.
 
 ---
 
-## Relation to Full FASEROH Pipeline
+## Relation to the Original FASEROH Problem
 
-This evaluation task validates the seq2seq machinery. In the full FASEROH project:
+This project serves as a simplified symbolic sequence-translation analogue of the broader FASEROH problem formulation.
 
-| This Task | Full FASEROH |
+| This Project | Original FASEROH Problem |
 | :--- | :--- |
 | Source: symbolic function string | Source: histogram bin counts |
-| Target: infix Taylor expansion | Target: prefix symbolic PDF |
-| Validation: exact string match | Validation: χ²/ndf < 2 |
-| Dataset: 3,000 samples | Dataset: 100K+ samples |
+| Target: Taylor expansion polynomial | Target: symbolic probability density function |
+| Validation: exact sequence match | Validation: χ²/ndf quality metric |
+| Dataset: 3,000 synthetic samples | Dataset: large-scale scientific datasets |
 
-The Transformer encoder will be adapted to read integer bin counts instead of 
-function tokens; the decoder architecture is directly transferable.
+The core objective is to study how different Seq2Seq architectures handle structured symbolic translation tasks under varying information bottlenecks.
+
+While the data modality differs, the encoder-decoder formulation, attention mechanisms, and symbolic sequence-generation principles remain conceptually related.
